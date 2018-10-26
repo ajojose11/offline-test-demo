@@ -6,71 +6,70 @@
     <ion-title>Profile</ion-title>
   </ion-navbar>
 </ion-header>
-
 <ion-content>
 
-<!-- profile -->
+  <!-- profile -->
 
-<form id="profile">
+  <form id="profile">
+    <ion-item-group>
 
-  <ion-item-group>
-   
-    <ion-item-divider style="margin-top: 4px" color="light"><b>Profile Details</b></ion-item-divider>
-    
+      <ion-item-divider color="light">Profile</ion-item-divider>
 
-    <ion-item class="item-top"  padding>
-      <ion-label>Executive</ion-label>
-      <ion-select >
-        <ion-option value="name 1">Ram Gopal</ion-option>
-        <ion-option value="name 2">Jhon George</ion-option>
-      </ion-select>
-    </ion-item>
+      <ion-item class="item-top" padding>
+        <ion-label>Executive</ion-label>
+        <ion-select>
+          <ion-option value="name 1">Ram Gopal</ion-option>
+          <ion-option value="name 2">Jhon George</ion-option>
+        </ion-select>
+      </ion-item>
 
-    <ion-item  padding>
-      <ion-label floating>Name of the Company</ion-label>
-       
-      <ion-input type="text"></ion-input>
-    </ion-item>
+      <ion-item padding>
+        <ion-label floating>Name of the Company *</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
 
-    <ion-item  padding>
-      <ion-label floating>Party Type *</ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
+      <ion-item padding>
+        <ion-label floating>Party Type *</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
 
-    <ion-item padding>
-      <ion-label floating>Nature of the Company *</ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
+      <ion-item padding>
+        <ion-label floating>Nature of the Company *</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      
+      <button ion-button round float-right class="btn-top" color="secondary">Cancel </button>
+      <button ion-button round float-right class="btn-top" color="secondary">Save </button>
 
-    <button ion-button round float-right class="btn-top" color="secondary">Cancel </button>
-    <button ion-button round float-right class="btn-top" color="secondary">Save </button>
-  </ion-item-group>
+    </ion-item-group>
+
   </form>
 
   <!-- office types -->
   <form id="office">
-      <ion-item-group>
-        <ion-item-divider color="light"><b>Office Details</b></ion-item-divider>
-       
-        <ion-item padding>
-          <ion-label floating>Office Type *</ion-label>
-          <ion-input type="text"></ion-input>
-        </ion-item>
-    
-        <ion-item padding>
-          <ion-label floating>Description *</ion-label>        
-          <ion-input type="text"></ion-input>
-        </ion-item>
+    <ion-item-group>
+      <ion-item-divider color="light">Office Details</ion-item-divider>
 
-        <ion-item padding>
-          <ion-label floating>Country</ion-label>
-          <ion-input type="text"></ion-input>
-        </ion-item>
+      <ion-item padding>
+        <ion-label floating>Office Type *</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
 
-        <button ion-button round float-right class="btn-top" color="secondary">Cancel </button>
-        <button ion-button round float-right class="btn-top" color="secondary">Save </button>
-      </ion-item-group>
-      </form>
+      <ion-item padding>
+        <ion-label floating>Description *</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <ion-item padding>
+        <ion-label floating>Country</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <button ion-button round float-right class="btn-top" color="secondary">Cancel </button>
+      <button ion-button round float-right class="btn-top" color="secondary">Save </button>
+
+    </ion-item-group>
+  </form>
 
   <!-- <button ion-button secondary menuToggle>Toggle Menu</button> -->
 </ion-content>
